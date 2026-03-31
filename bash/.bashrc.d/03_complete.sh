@@ -14,3 +14,6 @@ source <(helm completion bash)
 
 # tenv
 source <(tenv completion bash)
+
+# LogCLI
+eval "$(logcli --completion-script-bash)"

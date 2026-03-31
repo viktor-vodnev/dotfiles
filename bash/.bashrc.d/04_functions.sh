@@ -42,5 +42,5 @@ kustomize() {
 
 # Run LogCLI in docker container
 logcli() {
-  docker run --rm -i grafana/logcli:3.7 "$@"
+  docker run --rm -i --network host -w /workdir -v "${PWD}:/workdir" grafana/logcli:3.6.7 "$@"
 }

@@ -39,3 +39,8 @@ kustomize() {
 # aws() {
 #   docker run --rm -it -e AWS_PROFILE -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli:latest "$@"
 # }
+
+# Run LogCLI in docker container
+logcli() {
+  docker run --rm -i grafana/logcli:3.7 "$@"
+}

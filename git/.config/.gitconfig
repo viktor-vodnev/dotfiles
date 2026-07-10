@@ -31,6 +31,7 @@
 [alias]
 	plog = log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'
 	pristine = !git reset --hard && git clean -dff
+	cdiff = diff --word-diff=color --word-diff-regex=.
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential

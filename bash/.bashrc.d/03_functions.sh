@@ -1,5 +1,10 @@
 # functions.sh
 
+# Open files, folders or URLs using the default application in the background
+open() {
+  xdg-open "${1:-.}" >/dev/null 2>&1 &
+}
+
 # Run yq in docker container
 yq() {
   docker run --rm -i -w /workdir -v "${PWD}":/workdir mikefarah/yq "$@"

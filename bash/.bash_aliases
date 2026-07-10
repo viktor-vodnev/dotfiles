@@ -16,9 +16,6 @@ alias ll='ls -alhF'
 alias la='ls -AF'
 alias l='ls -CF'
 
-# Open files, folders or URLs using the default application in the background
-alias open='xdg-open "$@" &>/dev/null & disown'
-
 # Add an "alert" alias for long running commands. Use like so: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 

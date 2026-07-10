@@ -13,7 +13,6 @@ $azure\
 $kubernetes\
 $cmd_duration\
 $line_break\
-$container\
 $character"""
 
 # Prompt controls

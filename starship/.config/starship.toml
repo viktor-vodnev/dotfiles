@@ -29,14 +29,14 @@ disabled = false
 # Session
 
 [username]
-format = '[ \[$user\]:]($style)'
+format = '[$user]($style)[@](white)'
 style_root = 'red'
-style_user = 'white'
+style_user = 'blue'
 show_always = false
 disabled = false
 
 [hostname]
-format = '[$ssh_symbol$hostname]($style)'
+format = '[$hostname:]($style)'
 style = 'blue'
 ssh_only = true
 ssh_symbol = ''

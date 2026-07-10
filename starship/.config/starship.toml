@@ -95,7 +95,7 @@ format = '$symbol[$context]($style)(:\($namespace\)) '
 
 [aws]
 format = '$symbol($profile/)[($region)]($style)( \[$duration\])'
-symbol = '[AWS: ](yellow)'
+symbol = '[aws: ](yellow)'
 style = ''
 #style = 'inverted fg:yellow'
 force_display = false
@@ -103,7 +103,7 @@ disabled = false
 
 [azure]
 format = '$symbol[($subscription)]($style) '
-symbol = '[Az ](blue) '
+symbol = '[az: ](blue)'
 style = ''
 
 [gcloud]

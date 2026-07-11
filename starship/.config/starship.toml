@@ -100,31 +100,31 @@ style = "yellow"
 [terraform]
 format = '[$symbol$version/$workspace]($style) '
 style = ''
-symbol = '[tf: ](bold purple)'
+symbol = '[tf: ](purple)'
 
 [kubernetes]
 format = '$symbol[$context]($style)(:\($namespace\)) '
 style = ''
-symbol = '[k8s: ](bold blue)'
+symbol = '[k8s: ](blue)'
 disabled = false
 
 [aws]
 format = '$symbol($profile/)[($region)]($style)( \[$duration\]) '
 style = ''
-symbol = '[aws: ](bold yellow)'
+symbol = '[aws: ](bright-yellow)'
 force_display = false
 disabled = false
 
 [azure]
 format = '$symbol[($subscription)]($style) '
 style = ''
-symbol = '[az: ](bold cyan)'
+symbol = '[az: ](bright-cyan)'
 disabled = false
 
 [gcloud]
 format = '$symbol[$account(@$domain)(\($region\))]($style) '
 style = ''
-symbol = '[gcp: ](bold green)'
+symbol = '[gcp: ](bright-green)'
 
 [python]
 format = "[$virtualenv]($style) "

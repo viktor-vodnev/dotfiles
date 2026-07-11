@@ -13,6 +13,7 @@ $azure\
 $kubernetes\
 $cmd_duration\
 $line_break\
+$python\
 $character"""
 
 # Prompt controls
@@ -124,3 +125,9 @@ disabled = false
 format = '$symbol[$account(@$domain)(\($region\))]($style) '
 style = ''
 symbol = '[gcp: ](green)'
+
+[python]
+format = "[$virtualenv]($style) "
+style = "blue"
+detect_extensions = []
+detect_files = []

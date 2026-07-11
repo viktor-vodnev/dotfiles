@@ -30,15 +30,15 @@ disabled = false
 # Session
 
 [username]
-format = '[$user]($style)[@](white)'
+format = '[$user]($style)[@](bright-black)'
 style_root = 'red'
-style_user = 'blue'
+style_user = 'bright-black'
 show_always = false
 disabled = false
 
 [hostname]
 format = '[$hostname:]($style)'
-style = 'blue'
+style = 'bright-black'
 ssh_only = true
 ssh_symbol = ''
 disabled = false
@@ -61,13 +61,13 @@ show_notifications = false
 
 [git_branch]
 format = '[\($branch(:$remote_branch)\)]($style) '
-style = 'blue'
+style = 'bright-black'
 always_show_remote = false
 disabled = false
 
 [git_commit]
 format = '[\($hash$tag\)]($style) '
-style = 'green'
+style = 'bright-black'
 commit_hash_length = 7
 only_detached = true
 tag_disabled = false
@@ -100,34 +100,34 @@ style = "yellow"
 [terraform]
 format = '[$symbol$version/$workspace]($style) '
 style = ''
-symbol = '[tf: ](purple)'
+symbol = '[tf: ](bold purple)'
 
 [kubernetes]
 format = '$symbol[$context]($style)(:\($namespace\)) '
 style = ''
-symbol = '[k8s: ](blue)'
+symbol = '[k8s: ](bold blue)'
 disabled = false
 
 [aws]
 format = '$symbol($profile/)[($region)]($style)( \[$duration\]) '
 style = ''
-symbol = '[aws: ](yellow)'
+symbol = '[aws: ](bold yellow)'
 force_display = false
 disabled = false
 
 [azure]
 format = '$symbol[($subscription)]($style) '
 style = ''
-symbol = '[az: ](blue)'
+symbol = '[az: ](bold cyan)'
 disabled = false
 
 [gcloud]
 format = '$symbol[$account(@$domain)(\($region\))]($style) '
 style = ''
-symbol = '[gcp: ](green)'
+symbol = '[gcp: ](bold green)'
 
 [python]
 format = "[$virtualenv]($style) "
-style = "blue"
+style = "bright-black"
 detect_extensions = []
 detect_files = []
